@@ -230,7 +230,7 @@
             <form id="pdf-form">
                 <div class="pdf">
                     <p class="pdf-text">PDF link*</p>
-                    <input class="pdf-input" name='pdflink' type="text" placeholder="Add your pdf link here" required>
+                    <input class="pdf-input" name='pdflink' type="text" placeholder="Add your pdf link here" required autocomplete="off">
                 </div>
                 
                 <div class="input-fields">
@@ -239,9 +239,9 @@
                             <i class="fas fa-minus-circle">
                             </i>
                         </button>
-                        <input class="field" type="text" name="title[]"  placeholder="Add video title here" required>
-                        <input class="field" type="url" name="thumbnail[]" placeholder="Add video thumbnail url" required>
-                        <input class="field" type="url" name="url[]" placeholder="Add video url" required>
+                        <input class="field" type="text" name="title[]"  placeholder="Add video title here" required autocomplete="off">
+                        <input class="field" type="url" name="thumbnail[]" placeholder="Add video thumbnail url" required autocomplete="off">
+                        <input class="field" type="url" name="url[]" placeholder="Add video url" required autocomplete="off">
                     </div>
                     
     
@@ -298,9 +298,9 @@
                     <i class="fas fa-minus-circle">
                     </i>
                 </button>
-                <input class="field" type="text" name="title[]"  placeholder="Add video title here" required>
-                <input class="field" type="text" name="thumbnail[]" placeholder="Add video thumbnail url" required>
-                <input class="field" type="text" name="url[]" placeholder="Add video url" required>
+                <input class="field" type="text" name="title[]"  placeholder="Add video title here" required autocomplete="off">
+                <input class="field" type="text" name="thumbnail[]" placeholder="Add video thumbnail url" required autocomplete="off">
+                <input class="field" type="text" name="url[]" placeholder="Add video url" required autocomplete="off">
             </div>`
 
                 $('.input-fields').append(input_fields)
