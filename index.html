@@ -58,7 +58,7 @@
         align-items: center;
         text-align: center;
         background-color: rgb(164, 217, 250);
-        width: 50%;
+        width: 60%;
         border-radius: 10px;
         position: relative;
     
@@ -132,15 +132,17 @@
         
     }
     #btn{
-        height: 90px;
+        height: 110px;
         color: white;
         cursor: pointer;
         background: rgb(121, 141, 230);
         display: block;
-        padding: 0 12px;
+        padding: 0px 12px;
         align-items: center;
         text-decoration: none;
         border-color: none;
+        border-radius: 10px;
+        margin-top: 70%;
     }
     /* #btn:hover{
         background: violet;
@@ -174,10 +176,10 @@
     }
     #btn p{
         writing-mode: vertical-lr;
-        text-orientation: t;
         color: white;
         padding-bottom: 10px;
         padding-top: 10px;
+        
     }
     .innervid{
         height: 180px;
@@ -196,6 +198,23 @@
         width: 100%;
         height: 150px;
     }
+    @media(max-width:800px){
+        .field{
+            width: 70%;
+
+        }
+        .video-details{
+            width: 90%;
+        }
+        
+
+    }
+    @media(max-width:500px){
+        #generate-button{
+            width: 70%;
+
+        }
+    }
 
     
     
@@ -211,7 +230,7 @@
             <form id="pdf-form">
                 <div class="pdf">
                     <p class="pdf-text">PDF link*</p>
-                    <input class="pdf-input" name='pdflink' type="text" placeholder="Add your pdf link here" >
+                    <input class="pdf-input" name='pdflink' type="text" placeholder="Add your pdf link here" required>
                 </div>
                 
                 <div class="input-fields">
@@ -220,9 +239,9 @@
                             <i class="fas fa-minus-circle">
                             </i>
                         </button>
-                        <input class="field" type="text" name="title[]"  placeholder="Add video title here">
-                        <input class="field" type="text" name="thumbnail[]" placeholder="Add video thumbnail url">
-                        <input class="field" type="text" name="url[]" placeholder="Add video url">
+                        <input class="field" type="text" name="title[]"  placeholder="Add video title here" required>
+                        <input class="field" type="url" name="thumbnail[]" placeholder="Add video thumbnail url" required>
+                        <input class="field" type="url" name="url[]" placeholder="Add video url" required>
                     </div>
                     
     
@@ -279,9 +298,9 @@
                     <i class="fas fa-minus-circle">
                     </i>
                 </button>
-                <input class="field" type="text" name="title[]"  placeholder="Add video title here">
-                <input class="field" type="text" name="thumbnail[]" placeholder="Add video thumbnail url">
-                <input class="field" type="text" name="url[]" placeholder="Add video url">
+                <input class="field" type="text" name="title[]"  placeholder="Add video title here" required>
+                <input class="field" type="text" name="thumbnail[]" placeholder="Add video thumbnail url" required>
+                <input class="field" type="text" name="url[]" placeholder="Add video url" required>
             </div>`
 
                 $('.input-fields').append(input_fields)
@@ -324,7 +343,7 @@
                         <div class="video-button">
                             <button id="btn" onclick="allvideos()">
                                 <p class="innerbtn">Videos</p>
-                                <i class="fas fa-chevron-left" ></i>
+                                <i class="fas fa-chevron-left" id="innerbtn2"></i>
                             </button>
                         </div>
                             
